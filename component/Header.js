@@ -1,47 +1,44 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 import styles from '../styles/Header.module.css';
 
 const navLinks = [
-    {
-        name: "Home",
-        path: "/"
-    },
-    {
-        name: "About Us",
-        path: "/about"
-    },
-    {
-        name: "Services",
-        path: "/services"
-    }
-]
+  {
+    index: 1 - 23,
+    name: 'Home',
+    path: '/',
+  },
+  {
+    index: 3 - 87,
+    name: 'About Us',
+    path: '/about',
+  },
+  {
+    index: 4 - 97,
+    name: 'Services',
+    path: '/services',
+  },
+];
 
-
-const displayNav =() =>{
-    console.log('hey')
-}
-const Header = () => {
-
-    
-    return (
-        <header className={styles.nav__container}>
-            <img src="./menu.svg" onClick={displayNav} className={styles.nav__logo}/>
-            <nav className={styles.nav__bar}>
-                <ul>
-                {
-                    navLinks.map((link, index) => {
-                        return (
-                            <Link href={link.path}>
-                                <li key={index} className={styles.nav__link}> {link.name}  </li>
-                            </Link>
-                        )
-                    })
-                }
-                </ul>
-                <button>Get Started</button>
-            </nav>
-        </header>
-    )
-}
+const Header = () => (
+  <header className={styles.nav__container}>
+    <img src="./menu.svg" className={styles.nav__logo} alt="menu-logo" />
+    <nav className={styles.nav__bar}>
+      <ul>
+        {
+        navLinks.map((link) => (
+          <Link key={link.index} href={link.path}>
+            <li className={styles.nav__link}>
+              {' '}
+              {link.name}
+              {' '}
+            </li>
+          </Link>
+        ))
+        }
+      </ul>
+      <button type="button">Get Started</button>
+    </nav>
+  </header>
+);
 export default Header;
