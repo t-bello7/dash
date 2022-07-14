@@ -4,9 +4,8 @@ import CardItem from '../component/CardItem';
 
 export default function Home() {
   return (
-
     <RootLayout>
-      <main>
+      <main className='container'>
         <div>
           <div>
             <h1>Track Your Business Social Media Activities.</h1>

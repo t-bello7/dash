@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Name : Dash
+
+> Description the project.
+ A platform that is streamlined on technology to create provide one hub to maintain to all your social media account.
+
+## Built With
+
+- Javascript, Next, Prisma and PlanetScale. 
+- Gitflow and Github flow
+
+## Live Demo (Coming Soon)
+
+<!-- [Live Demo Link](https://t-bello7.github.io/micro-react-todo-list/) -->
+
 
 ## Getting Started
 
-First, run the development server:
+This project is open source and you are free take modify and do with as you wish. To get a local copy up and running follow these simple example steps.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Prerequisites ♻️
+- Any modern browser.
+- A local version control like git installed on your computer
+- NodeJs
+- Code editor (Visual studio code, sublime text, notepad++, ...) installed on your computer.
+- Knowledge of HTML, CSS, JavaScipt, Vite and React.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Setup
+- Clone the project using the [link](https://github.com/t-bello7/micro-calculator)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Install
+- After cloning, change directory into the root folder of the project and run `yarn install` or `npm install` in your terminal to install necessary dependencies.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Usage
+- After necessary dependencies have been installed run `yarn dev` or `npm dev` in your terminal to start a live server of the project.
+<!-- ### Run tests -->
 
-## Learn More
+### Deployment
+- Run `yarn build` or `npm run build` in the terminal to build files for deployment and distribution
 
-To learn more about Next.js, take a look at the following resources:
+## Authors
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+👤 **Author1**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- GitHub: [@githubhandle](https://github.com/t-bello7)
+- Twitter: [@twitterhandle](https://twitter.com/__tbello)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/__tbello)
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions, issues, and feature requests are welcome!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+- Hashnode
+- PlanetScale
+
+
+## Resources Used 
+- https://ibaslogic.com/react-tutorial-for-beginners/
+## 📝 License
+This project is [MIT](./MIT.md) licensed.

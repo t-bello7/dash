@@ -45,8 +45,7 @@ ul {
 }
 
 .container {
-  width: 80%;
-  margin: 0 auto;
+ margin-inline: 1.5rem;
 }
 
 .flex {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from '../styles/Header.module.css';
 
@@ -20,9 +20,15 @@ const navLinks = [
   },
 ];
 
-const Header = () => (
+const Header = () => {
+  const [navBarOpen, setNavBarOpen] = useState(false)
+  const handleToggle = () => {
+    setNavBarOpen(prev => !prev)
+  }
+
+  return (
   <header className={styles.nav__container}>
-    <img src="./menu.svg" className={styles.nav__logo} alt="menu-logo" />
+    <button onClick={handleToggle} type="button"><img src="./menu.svg" className={styles.nav__logo} alt="menu-logo" /> </button>
     <nav className={styles.nav__bar}>
       <ul>
         {
@@ -40,5 +46,6 @@ const Header = () => (
       <button type="button">Get Started</button>
     </nav>
   </header>
-);
+  )
+};
 export default Header;
