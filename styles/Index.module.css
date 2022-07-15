@@ -1,0 +1,13 @@
+.perfect_solution {
+    /* background-image: url(); */
+}
+
+.bg__yellow {
+    background-color: var(--clr-secondary-1);
+    text-align: center;
+    padding-block: 2rem;
+}
+
+.center {
+    text-align: center;
+}

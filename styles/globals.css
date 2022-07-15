@@ -1,5 +1,6 @@
 :root {
   --clr-secondary: hsl(36, 100%, 50%);
+  --clr-secondary-1: hsl(36, 100%, 71%);
   --clr-primary: hsl(240, 100%, 50%);
   --clr-info: hsl(214, 84%, 56%);
   --clr-success: hsl(145, 63%, 42%);
@@ -44,8 +45,8 @@ ul {
   margin: 0;
 }
 
-.container {
- margin-inline: 1.5rem;
+.container > * {
+ padding-inline: 1.5rem;
 }
 
 .flex {
@@ -53,6 +54,28 @@ ul {
   justify-items: center;
 }
 
-main {
-  margin-top: 15vh;
+.btn-primary {
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  display: flex;
+  gap: 0.3rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--clr-secondary-1);
+}
+
+.btn-secondary > img {
+  width: 1rem; 
+  height: 1rem;
+}
+
+.mg-1{
+  margin-block: 1rem;
 }

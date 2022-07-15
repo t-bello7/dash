@@ -1,7 +1,9 @@
 import React from 'react';
+import styles from '../styles/CardItem.module.css'
 
 const CardItem = () => (
-  <div>
+  <div className={styles.card__container}>
+    <img src="./img/analyze.svg"/>
     <h3>Track Your social media activities</h3>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
