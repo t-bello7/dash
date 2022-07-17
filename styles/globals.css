@@ -36,6 +36,7 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 li,
@@ -45,7 +46,7 @@ ul {
   margin: 0;
 }
 
-.container > * {
+.container > *  {
  padding-inline: 1.5rem;
 }
 
