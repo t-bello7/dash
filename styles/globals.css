@@ -80,3 +80,7 @@ ul {
 .mg-1{
   margin-block: 1rem;
 }
+
+.flow > * {
+  margin-top: 2rem;
+}

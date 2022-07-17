@@ -38,6 +38,9 @@
         padding-block: 3rem;
         padding-inline: 2rem;
     }
+    .bg__yellow{
+        margin-top: 0;
+    }
     .reason{
         display: flex;
         justify-content: space-around;

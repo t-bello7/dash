@@ -7,9 +7,9 @@ import styles from '../styles/Index.module.css';
 export default function Home() {
   return (
     <RootLayout>
-      <main className='container'>
+      <main className='container flow'>
         <div className={styles.track}>
-          <div>
+          <div className='flow'>
             <h1>Track Your Business Social Media Activities.</h1>
             <p>Connecting social media marketers to more online customer reach.</p>
             <div className={styles.track__buttons}>
@@ -23,7 +23,7 @@ export default function Home() {
           <img src="./img/man.png" alt="man-img" />
         </div>
         <div className={styles.perfect}>
-          <div>
+          <div className='flow'>
             <h2>  We Provide The Perfect Solution For Your Business</h2>
             <p> Get an adequate statistical analysis of your business social media activities. </p>
           </div>
