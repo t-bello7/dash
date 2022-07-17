@@ -1,11 +1,3 @@
-.nav__container {
-  /* margin-block: 1.5rem; */
-}
-
-.nav__link {
-  /* background-color: black; */
-}
-
 .nav__logo {
   width: 100px;
   margin-top: 5vh;
@@ -42,4 +34,37 @@
 .nav__bar.show {
   transform: translateX(0);
   transition: transform 0.25s ease-in-out;
+}
+
+
+@media (min-width: 769px) {
+  .nav__container {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 2rem;
+  }
+  
+  .nav__toggle{
+    display: none;
+  }
+
+  .nav__bar{
+    position: static;
+    transform: translateX(0);
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    width: 60%;
+  }
+
+  .nav__bar > :first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem ;
+  }
+  .nav__logo {
+    width: 100px;
+    margin:0 ;
+  }
 }

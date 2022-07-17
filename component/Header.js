@@ -48,7 +48,7 @@ const Header = () => {
         ))
         }
       </ul>
-      <button type="button">Get Started</button>
+      <button type="button" className='btn-primary'>Get Started</button>
     </nav>
   </header>
   )
