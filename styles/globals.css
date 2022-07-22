@@ -10,7 +10,9 @@
   --clr-black-2: hsl(0, 0%, 11%);
   --clr-white: hsl(0, 0%, 100%);
 }
-
+/* 
+popins for paragraph 
+Montserrat for paragraph */
 html,
 body {
   padding: 0;

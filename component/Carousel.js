@@ -1,11 +1,23 @@
 import React from "react";
 import CardItem from "./CardItem";
+import Slider from 'infinite-react-carousel';
+import 'infinite-react-carousel/lib/carousel/style.css'
+
 
 const Carousel = () =>{
+    const settings =  {
+        autoplay: true,
+        autoplaySpeed: 7000,
+        duration: 400,
+        shift: 100,
+        centerMode: true,
+        dots: true,
+      };
     return (
-        <div>
-
-        </div>
+            <Slider { ...settings }>
+                <CardItem/>
+                <CardItem/>
+            </Slider>
     )
 }
 

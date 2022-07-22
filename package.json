@@ -6,13 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"}
-  ,
+    "lint": "next lint"
+  },
   "dependencies": {
+    "@prisma/client": "^4.1.0",
     "next": "12.2.2",
+    "next-auth": "^4.10.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"}
-  ,
+    "react-dom": "18.2.0"
+  },
   "devDependencies": {
     "@babel/core": "7.x",
     "@babel/eslint-parser": "7.x",
@@ -26,8 +28,10 @@
     "eslint-plugin-jsx-a11y": "6.x",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
+    "prisma": "^4.1.0",
     "stylelint": "13.x",
     "stylelint-config-standard": "21.x",
     "stylelint-csstree-validator": "1.x",
-    "stylelint-scss": "3.x"}
+    "stylelint-scss": "3.x"
+  }
 }
