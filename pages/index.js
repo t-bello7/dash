@@ -2,9 +2,10 @@ import React from 'react';
 import RootLayout from '../component/RootLayout';
 import CardItem from '../component/CardItem';
 import styles from '../styles/Index.module.css';
-
+import { useSession } from 'next-auth/react';
 
 export default function Home() {
+  const {data: session} = useSession()
   return (
     <RootLayout>
       <main className='container flow'>

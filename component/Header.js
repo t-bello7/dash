@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from '../styles/Header.module.css';
+import { signIn } from 'next-auth/react'
 
 const navLinks = [
   {
@@ -48,7 +49,10 @@ const Header = () => {
         ))
         }
       </ul>
-      <button type="button" className='btn-primary'>Get Started</button>
+      <div className='flex'>
+        <button type="button" className='btn-secondary' onClick={() => signIn('email', {callbackUrl: 'http://localhost:3000/dashboard'})}>Log In</button>
+        <button type="button" className='btn-primary'>Sign Up</button>
+      </div>
     </nav>
   </header>
   )
