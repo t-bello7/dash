@@ -35,7 +35,14 @@ export default function Home() {
           We manage and make social media posting swift for digital marketers
           </p>
           <div>
-            <CardItem />
+            <CardItem>
+            <img src="./img/analyze.svg"/>
+                <h3>Track Your social media activities</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Lobortis enim sapien, risus, sed. Feugiat nulla.
+                </p>
+            </CardItem>
           </div>
 
         </div>

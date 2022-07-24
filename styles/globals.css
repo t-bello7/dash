@@ -1,6 +1,7 @@
 :root {
   --clr-secondary: hsl(36, 100%, 50%);
   --clr-secondary-1: hsl(36, 100%, 71%);
+  --clr-secondary-2: hsla(37, 100%, 93%, 0.7);
   --clr-primary: hsl(240, 100%, 50%);
   --clr-info: hsl(214, 84%, 56%);
   --clr-success: hsl(145, 63%, 42%);
@@ -71,7 +72,7 @@ ul {
   display: flex;
   gap: 0.3rem;
   border-radius: 0.4rem;
-  border: 1px solid var(--clr-secondary-1);
+  border: 1px solid var(--clr-secondary);
 }
 
 .btn-secondary > img {
@@ -83,6 +84,6 @@ ul {
   margin-block: 1rem;
 }
 
-.flow > * {
-  margin-top: 2rem;
+.flow > :not(:last-child) {
+  margin-top: 1rem;
 }

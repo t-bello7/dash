@@ -1,5 +1,8 @@
+import styles from '../styles/SideNav.module.css';
 import { v4 as uuidv4 } from "uuid"
+import { useRouter } from 'next/router';
 import Link from "next/link";
+import CardItem from './CardItem';
 
 const navLinks = [
     {
@@ -20,36 +23,67 @@ const navLinks = [
   ];
 
 
-const SideNav = () => (
-        <nav>
-            <div>
+const SideNav = () => {
+    const router =  useRouter()
+
+    return (
+        <nav className={styles.nav__container}>
+            <div className={`flow ${styles.nav__profile}`}>
+                <img src="/dash-logo.svg" className={styles.nav__logo}/>
+                <img src="/img/default-profile.png"/>
                 <h2> Lucas Eniola</h2>
                 <span> Edit Profile</span>
             </div>
 
-            <div>
+            <div className={styles.link__container}>
                 <ul>
                     {navLinks.map((link) => (
                         <Link key={link.index} href={link.path}>
-                            <li>{link.name}</li>
+                            <li className={router.pathname === link.path ? `${styles.nav__active} ${styles.nav__link}`: `${styles.nav__link}`}>{link.name}</li>
                         </Link>
                         ))
                     }
                 </ul>
-                <button> Add Socials </button>
+                <button className={`btn-secondary ${styles.btn__social}`}  > Add Socials </button>
             </div>
 
-            <div>
-                <h2> Overview </h2>
-            </div>
+            <CardItem width="100%" style={{margin:"1rem"}} >
+                <h2> Most Viewed </h2>
+                <div> 
+                    <span>1</span>
+            
+                     Adidas Sneakers Post
+                     35 views
 
-            <div>
-                <span> Help center </span>
-                <span> Logout </span>
+                     <span> post image</span>
+                     
+                </div>
+                <div> 
+                    <span>2</span>
+            
+                     Adidas Sneakers Post
+                     35 views
+
+                     <span> post image</span>
+                     
+                </div>
+                <div> 
+                    <span>3</span>
+            
+                     Adidas Sneakers Post
+                     35 views
+
+                     <span> post image</span>         
+                </div>
+            </CardItem>
+
+            <div className={`flex ${styles.nav__button}`}>
+                <button> Help center </button>
+                <button> Logout </button>
             </div>
 
 
         </nav>
-)
+)}
 
 export default SideNav;
