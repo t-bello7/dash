@@ -2,20 +2,21 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from '../styles/Header.module.css';
 import { signIn } from 'next-auth/react'
+import { v4 as uuidv4 } from "uuid"
 
 const navLinks = [
   {
-    index: 1 - 23,
+    index: uuidv4(),
     name: 'Home',
     path: '/',
   },
   {
-    index: 3 - 87,
+    index: uuidv4(),
     name: 'About Us',
     path: '/about',
   },
   {
-    index: 4 - 97,
+    index: uuidv4(),
     name: 'Contact Us',
     path: '/services',
   },
