@@ -1,11 +1,9 @@
-import DashboardLayout from "../../component/DashboardLayout";
+import DashboardLayout from '../../component/DashboardLayout';
 
-const PostPage = () => {
-    return (
-        <DashboardLayout>
-            <main> This is Post page</main>
-        </DashboardLayout>
-    )
-}
+const PostPage = () => (
+  <DashboardLayout>
+    <main> This is Post page</main>
+  </DashboardLayout>
+);
 
-export default PostPage
+export default PostPage;

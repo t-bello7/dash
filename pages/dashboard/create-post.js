@@ -1,13 +1,11 @@
-import DashboardLayout from "../../component/DashboardLayout";
+import DashboardLayout from '../../component/DashboardLayout';
 
-const CreatePost = () => {
-    return (
-    <DashboardLayout> 
-        <main>
-            hello
-        </main>
-    </DashboardLayout>
-    )
-}
+const CreatePost = () => (
+  <DashboardLayout>
+    <main>
+      hello
+    </main>
+  </DashboardLayout>
+);
 
-export default CreatePost
+export default CreatePost;

@@ -1,11 +1,9 @@
-import DashboardLayout from "../../component/DashboardLayout";
+import DashboardLayout from '../../component/DashboardLayout';
 
-const CalendarPage = () => {
-    return (
-        <DashboardLayout>
-            <main> This is CalendarPage page</main>
-        </DashboardLayout>
-    )
-}
+const CalendarPage = () => (
+  <DashboardLayout>
+    <main> This is CalendarPage page</main>
+  </DashboardLayout>
+);
 
-export default CalendarPage
+export default CalendarPage;

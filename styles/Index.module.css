@@ -1,49 +1,54 @@
 .bg__yellow {
-    background-color: var(--clr-secondary-1);
-    text-align: center;
-    padding-block: 2rem;
+  background-color: var(--clr-secondary-1);
+  text-align: center;
+  padding-block: 2rem;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .track__buttons > :last-child {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 769px) {
-    .track{
-        display: flex;
-        justify-content: space-between;
-    }
+  .track {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .track__buttons{
-        display: flex;
-        gap: 1rem;
-    }
-    .track__buttons > :last-child {
-        margin: 0;
-    }
-    .perfect{
-        background-image: url('/img/perfect-bg.png');
-        background-size: cover;
-        padding: 0;
-    }
-    .perfect > :last-child{
-        background-color: rgba(255,255,255,0.5);
-        position: relative;
-        top: 0;
-        left: 0;
-        padding-block: 3rem;
-        padding-inline: 2rem;
-    }
-    .bg__yellow{
-        margin-top: 0;
-    }
-    .reason{
-        display: flex;
-        justify-content: space-around;
-        text-align: left;
-    }
+  .track__buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .track__buttons > :last-child {
+    margin: 0;
+  }
+
+  .perfect {
+    background-image: url('/img/perfect-bg.png');
+    background-size: cover;
+    padding: 0;
+  }
+
+  .perfect > :last-child {
+    background-color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-block: 3rem;
+    padding-inline: 2rem;
+  }
+
+  .bg__yellow {
+    margin-top: 0;
+  }
+
+  .reason {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+  }
 }

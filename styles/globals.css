@@ -11,8 +11,9 @@
   --clr-black-2: hsl(0, 0%, 11%);
   --clr-white: hsl(0, 0%, 100%);
 }
-/* 
-popins for paragraph 
+
+/*
+popins for paragraph
 Montserrat for paragraph */
 html,
 body {
@@ -49,8 +50,8 @@ ul {
   margin: 0;
 }
 
-.container > *  {
- padding-inline: 1.5rem;
+.container > * {
+  padding-inline: 1.5rem;
 }
 
 .flex {
@@ -76,11 +77,11 @@ ul {
 }
 
 .btn-secondary > img {
-  width: 1rem; 
+  width: 1rem;
   height: 1rem;
 }
 
-.mg-1{
+.mg-1 {
   margin-block: 1rem;
 }
 
