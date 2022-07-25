@@ -1,0 +1,7 @@
+.home__container {
+  display: grid;
+  grid-template-columns: 50ch 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3rem;
+  background-color: red;
+}

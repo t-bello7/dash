@@ -1,3 +1,20 @@
+:root {
+  --clr-secondary: hsl(36, 100%, 50%);
+  --clr-secondary-1: hsl(36, 100%, 71%);
+  --clr-secondary-2: hsla(37, 100%, 93%, 0.7);
+  --clr-primary: hsl(240, 100%, 50%);
+  --clr-info: hsl(214, 84%, 56%);
+  --clr-success: hsl(145, 63%, 42%);
+  --clr-warning: hsl(45, 74%, 56%);
+  --clr-error: hsl(0, 79%, 63%);
+  --clr-black-1: hsl(0, 0%, 0%);
+  --clr-black-2: hsl(0, 0%, 11%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+/*
+popins for paragraph
+Montserrat for paragraph */
 html,
 body {
   padding: 0;
@@ -23,4 +40,51 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+}
+
+li,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container > * {
+  padding-inline: 1.5rem;
+}
+
+.flex {
+  display: flex;
+  justify-items: center;
+}
+
+.btn-primary {
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  display: flex;
+  gap: 0.3rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--clr-secondary);
+}
+
+.btn-secondary > img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.mg-1 {
+  margin-block: 1rem;
+}
+
+.flow > :not(:last-child) {
+  margin-top: 1rem;
 }

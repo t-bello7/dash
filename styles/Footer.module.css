@@ -1,0 +1,34 @@
+.footer__container {
+  background-color: var(--clr-black-2);
+  color: var(--clr-white);
+  padding-inline: 1.5rem;
+  display: grid;
+}
+
+.footer__container > :first-child {
+  text-align: right;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid > * > :first-child {
+  color: var(--clr-secondary);
+}
+
+.link__item {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.link__item:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
