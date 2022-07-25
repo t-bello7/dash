@@ -1,8 +1,9 @@
 import DashboardLayout from '../../component/DashboardLayout';
-import styles from '../../styles/DashboardHome.module.css';
+import styles from '../../styles/DashBoardHome.module.css';
 import CardItem from '../../component/CardItem';
 
-const DashboardHome = () => (
+const DashboardHome = () => {
+  return(
   <DashboardLayout>
     <main className={styles.home__container}>
       <div className="flex">
@@ -31,5 +32,5 @@ const DashboardHome = () => (
 
     </main>
   </DashboardLayout>
-);
+)};
 export default DashboardHome;
