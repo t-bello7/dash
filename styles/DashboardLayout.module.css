@@ -2,3 +2,7 @@
     display: grid;
     grid-template-columns: 254px 1fr;
 }
+
+.dashboard__container > :last-child{
+    padding-inline: 5%;
+}

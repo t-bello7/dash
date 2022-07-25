@@ -1,0 +1,9 @@
+.searchbar__container{
+    margin-block: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchbar__container > :first-child{
+    color: var(--clr-secondary);
+}
