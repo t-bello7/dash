@@ -46,7 +46,7 @@ const SideNav = () => {
         <button className={`btn-secondary ${styles.btn__social}`} type="button"> Add Socials </button>
       </div>
 
-      <CardItem width="100%" style={{ margin: '1rem' }}>
+      <CardItem>
         <h2> Most Viewed </h2>
         <div>
           <span>1</span>

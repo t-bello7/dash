@@ -10,7 +10,7 @@ const SearchBar = ({ title }) => {
         {' '}
         {title}
       </h1>
-      <button className="btn-primary" onClick={() => router.push('/dashboard/create-post')} type="button"> Create Post </button>
+      <button className="btn-primary" onClick={() => router.push('/dashboard/create-post')} type="button"> <img src="/plus-icon.png"/> Create Post </button>
     </div>
   );
 };
