@@ -1,9 +1,9 @@
 import { v4 as uuidv4 } from 'uuid';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { signOut } from 'next-auth/react';
 import styles from '../styles/SideNav.module.css';
 import CardItem from './CardItem';
-import { signOut } from 'next-auth/react';
 
 const navLinks = [
   {
@@ -78,7 +78,7 @@ const SideNav = () => {
 
       <div className={`flex ${styles.nav__button}`}>
         <button type="button"> Help center </button>
-        <button type="button"  onClick={() => signOut()}> Logout </button>
+        <button type="button" onClick={() => signOut()}> Logout </button>
       </div>
 
     </nav>
