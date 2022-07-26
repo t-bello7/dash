@@ -65,6 +65,7 @@ ul {
   padding: 1rem 2rem;
   border-radius: 0.4rem;
   border: none;
+  cursor: pointer;
 }
 
 .btn-secondary {
@@ -74,6 +75,7 @@ ul {
   gap: 0.3rem;
   border-radius: 0.4rem;
   border: 1px solid var(--clr-secondary);
+  cursor: pointer;
 }
 
 .btn-secondary > img {

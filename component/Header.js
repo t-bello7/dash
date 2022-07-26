@@ -50,10 +50,7 @@ const Header = () => {
         ))
         }
         </ul>
-        <div className="flex">
-          <button type="button" className="btn-secondary" onClick={() => signIn('email', { callbackUrl: 'http://localhost:3000/dashboard' })}>Log In</button>
-          <button type="button" className="btn-primary">Sign Up</button>
-        </div>
+        <button type="button" className="btn-primary" onClick={() => signIn('email', { callbackUrl: 'http://localhost:3000/dashboard' })}>Get Started</button>
       </nav>
     </header>
   );

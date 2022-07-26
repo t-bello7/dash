@@ -9,8 +9,8 @@ export default function Home() {
       <main className="container flow">
         <div className={styles.track}>
           <div className="flow">
-            <h1>Track Your Business Social Media Activities.</h1>
-            <p>Connecting social media marketers to more online customer reach.</p>
+            <h1> Publish your articles from one platform.</h1>
+            <p>Connecting content creators and technical writers to more online customer reach at a dash.</p>
             <div className={styles.track__buttons}>
               <button type="button" className="btn-primary">Start Now </button>
               <button type="button" className="btn-secondary">
@@ -58,11 +58,11 @@ export default function Home() {
 
         </div>
         <div className={`${styles.center} ${styles.reason}`}>
+          <img src="./img/saly-10.png" alt="sally schduleing" />
           <div>
             <h3>Plan and schedule your posts.</h3>
             <p>Get an adequate statistical analysis of your business social media activities.</p>
           </div>
-          <img src="./img/saly-10.png" alt="sally schduleing" />
         </div>
         <div className={`${styles.center} ${styles.reason}`}>
           <div>

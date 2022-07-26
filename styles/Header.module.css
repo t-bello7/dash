@@ -9,6 +9,10 @@
   height: 50px;
 }
 
+.nav__link {
+  cursor: pointer;
+}
+
 .nav__toggle {
   position: absolute;
   top: 5vh;

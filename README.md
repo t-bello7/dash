@@ -1,7 +1,7 @@
 # Project Name : Dash
 
 > Description the project.
- A platform that is streamlined on technology to create provide one hub to maintain to all your social media account.
+ A platform that is streamlined on technology to create provide one hub to maintain to all your blog account.
 
 ## Built With
 
@@ -42,9 +42,9 @@ This project is open source and you are free take modify and do with as you wish
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/t-bello7)
-- Twitter: [@twitterhandle](https://twitter.com/__tbello)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/__tbello)
+- GitHub: [@t-bello7](https://github.com/t-bello7)
+- Twitter: [@__tbello](https://twitter.com/__tbello)
+- LinkedIn: [Bello Oluwatomisin](https://linkedin.com/in/__tbello)
 
 ## 🤝 Contributing
 
@@ -62,6 +62,10 @@ Give a ⭐️ if you like this project!
 
 
 ## Resources Used 
-- https://ibaslogic.com/react-tutorial-for-beginners/
+- [PlanetScale Quick Guide](https://docs.planetscale.com/docs/tutorials/planetscale-quick-start-guide)
+- [NextAuth.js Prisma Database](https://next-auth.js.org/adapters/prisma)
+- [PlantScale and Prisma QuickStart](https://docs.planetscale.com/docs/tutorials/prisma-quickstart)
+- [Figma Design](https://www.figma.com/file/lcnafPq7dZmwGwbdiAMziJ/Hashnode-Planet-X?node-id=224%3A1596)
+
 ## 📝 License
 This project is [MIT](./MIT.md) licensed.
