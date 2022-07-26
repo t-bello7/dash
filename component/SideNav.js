@@ -78,7 +78,7 @@ const SideNav = () => {
 
       <div className={`flex ${styles.nav__button}`}>
         <button type="button"> Help center </button>
-        <button type="button" onClick={() => signOut()}> Logout </button>
+        <button type="button" onClick={() =>signOut({ callbackUrl: `/` })}> Logout </button>
       </div>
 
     </nav>

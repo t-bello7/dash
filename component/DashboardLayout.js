@@ -12,6 +12,7 @@ const DashboardLayout = ({ children }) => {
   const { data: session, status } = useSession();
   const router = useRouter();
   let title;
+  console.log(session)
 
   // useEffect(() => {
   //   const response = fetch('/api/dasho');
@@ -26,21 +27,23 @@ const DashboardLayout = ({ children }) => {
     title = 'Create Post';
   }
 
-  if (status === 'authenticated') {
+  // if (session) {
     return (
       <div className={styles.dashboard__container}>
         <SideNav />
         <div>
-          <h1>{session.user}</h1>
+          {/* <h1>{session.user.email}</h1> */}
           <SearchBar title={title} />
           {children}
         </div>
       </div>
     );
-  }
-  return (
-    <AccessDenied />
-  );
+  // }
+  // else{
+    // return (
+    //   <AccessDenied />
+    // );
+  // }
 };
 
 export default DashboardLayout;
