@@ -10,7 +10,10 @@ export default function Home() {
         <div className={styles.track}>
           <div className="flow">
             <h1> Publish your articles from one platform.</h1>
-            <p>Connecting content creators and technical writers to more online customer reach at a dash.</p>
+            <p>
+              Connecting content creators and technical writers to more online
+              customer reach at a dash.
+            </p>
             <div className={styles.track__buttons}>
               <button type="button" className="btn-primary">Start Now </button>
               <button type="button" className="btn-secondary">
