@@ -30,7 +30,7 @@ const SideNav = () => {
     <nav className={styles.nav__container}>
       <div className={`flow ${styles.nav__profile}`}>
         <img src="/dash-logo.svg" className={styles.nav__logo} alt="logo" />
-        <img src="/img/default-profile.png" alt="profile-pic" />
+        <img src="/default-profile.png" alt="profile-pic" />
         <h2> Lucas Eniola</h2>
         <span> Edit Profile</span>
       </div>
