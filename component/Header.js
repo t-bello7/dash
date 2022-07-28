@@ -50,7 +50,7 @@ const Header = () => {
         ))
         }
         </ul>
-        <button type="button" className="btn-primary" onClick={() => signIn('email', { callbackUrl: `/dashboard` })}>Get Started</button>
+        <button type="button" className="btn-primary" onClick={() => signIn('email', { callbackUrl: '/dashboard' })}>Get Started</button>
       </nav>
     </header>
   );

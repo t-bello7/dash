@@ -1,6 +1,6 @@
 import styles from '../styles/CardItem.module.css';
 
-const CardItem = ({ children}) => (
+const CardItem = ({ children }) => (
   <div className={styles.card__container}>
     {children}
   </div>

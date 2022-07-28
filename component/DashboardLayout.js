@@ -4,15 +4,15 @@ import { useSession } from 'next-auth/react';
 import SideNav from './SideNav';
 import styles from '../styles/DashboardLayout.module.css';
 import SearchBar from './SearchBar';
-import AccessDenied from './AccessDenied';
+// import AccessDenied from './AccessDenied';
 
 const DashboardLayout = ({ children }) => {
   // const [content, setContent] = useState(content);
 
-  const { data: session, status } = useSession();
+  const { data: session } = useSession();
   const router = useRouter();
   let title;
-  console.log(session)
+  console.log(session);
 
   // useEffect(() => {
   //   const response = fetch('/api/dasho');
@@ -28,21 +28,21 @@ const DashboardLayout = ({ children }) => {
   }
 
   // if (session) {
-    return (
-      <div className={styles.dashboard__container}>
-        <SideNav />
-        <div>
-          {/* <h1>{session.user.email}</h1> */}
-          <SearchBar title={title} />
-          {children}
-        </div>
+  return (
+    <div className={styles.dashboard__container}>
+      <SideNav />
+      <div>
+        {/* <h1>{session.user.email}</h1> */}
+        <SearchBar title={title} />
+        {children}
       </div>
-    );
+    </div>
+  );
   // }
   // else{
-    // return (
-    //   <AccessDenied />
-    // );
+  // return (
+  //   <AccessDenied />
+  // );
   // }
 };
 
