@@ -17,15 +17,15 @@ const DashboardHome = () => (
         </CardItem>
       </div>
 
-      <CardItem width="100%">
+      <CardItem>
         I am jjjjjja dashoard, a protected page
       </CardItem>
 
-      <CardItem width="100%">
+      <CardItem>
         Recent Posts
       </CardItem>
 
-      <CardItem width="100%">
+      <CardItem>
         Scheduled Posts
       </CardItem>
 

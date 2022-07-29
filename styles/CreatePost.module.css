@@ -1,0 +1,36 @@
+.post__container {
+  width: 100%;
+  min-height: 100vh;
+  border: 1px solid var(--clr-secondary-1);
+  border-radius: 0.4rem;
+  background-color: var(--clr-secondary-2);
+  flex-direction: column;
+  padding: 3rem 2rem;
+}
+
+.post__title {
+  padding: 1rem;
+  border: none;
+  background: transparent;
+}
+
+.post__article {
+  padding: 1rem;
+  height: 60vh;
+  border: none;
+  background: transparent;
+}
+
+.footer {
+  flex-direction: column;
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    position: absolute;
+    flex-direction: row;
+    bottom: -10%;
+    justify-content: space-between;
+    width: 60%;
+  }
+}

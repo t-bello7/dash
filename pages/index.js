@@ -8,7 +8,7 @@ export default function Home() {
     <RootLayout>
       <main className="container flow">
         <div className={styles.track}>
-          <div className="flow">
+          <div>
             <h1> Publish your articles from one platform.</h1>
             <p>
               Connecting content creators and technical writers to more online

@@ -60,6 +60,14 @@ const Footer = () => (
       </div>
 
     </div>
+    <div>
+      {' '}
+      Powered by
+      <Link href="https://planetscale.com/">PlanetScale</Link>
+      {' '}
+      and
+      <Link href="https://hashnode.com">Hashnode </Link>
+    </div>
   </footer>
 );
 

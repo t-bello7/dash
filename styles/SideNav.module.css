@@ -14,6 +14,7 @@
 .nav__link {
   border-radius: 0.4rem;
   padding: 1rem 0.5rem;
+  cursor: pointer;
 }
 
 .nav__active {
@@ -40,6 +41,7 @@
 .nav__button > * {
   border: 0;
   background: none;
+  cursor: pointer;
 }
 
 .link__container {
