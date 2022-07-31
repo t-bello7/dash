@@ -1,4 +1,4 @@
-import { getSession } from 'next-auth/react';
+// import { getSession } from 'next-auth/react';
 import prisma from '../../../lib/prisma';
 import { encryptToken } from '../../../utils/crypto';
 

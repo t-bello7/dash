@@ -41,12 +41,12 @@ const Footer = () => (
         </span>
       </div>
       <div>
-        <h3  className={styles.footer__headers} >Contact Us</h3>
-        <span style={{display:'block'}}> bello@email.tbello.tech </span>
+        <h3 className={styles.footer__headers}>Contact Us</h3>
+        <span style={{ display: 'block' }}> bello@email.tbello.tech </span>
         <span> +344-45-4444</span>
       </div>
       <div className={styles.link__item}>
-        <h3 className={styles.footer__headers} > Link</h3>
+        <h3 className={styles.footer__headers}> Link</h3>
         {
           navLinks.map((navlink) => (
             <Link key={navlink.index} href={navlink.path}>

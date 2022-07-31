@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
+
 :root {
   --clr-secondary: hsl(36, 100%, 50%);
   --clr-secondary-1: hsl(36, 100%, 71%);
@@ -13,13 +14,15 @@
   --clr-black-3: hsl(0, 0%, 20%);
   --clr-white: hsl(0, 0%, 100%);
   --ff-montserrat: 'Montserrat', sans-serif;
-  --ff-poppins: 'Poppins' , sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;
 }
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: var(--ff-poppins);
+
   /* line-height: 36px; */
   font-size: 16px;
   font-weight: 400;
@@ -90,11 +93,11 @@ ul {
   margin-top: 2rem;
 }
 
-
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -104,8 +107,9 @@ ul {
   0% {
     transform: translateX(+100%);
   }
+
   100% {
-    transform: translateX(0)
+    transform: translateX(0);
   }
 }
 
@@ -113,6 +117,7 @@ ul {
   0% {
     transform: translateY(+100%);
   }
+
   100% {
     transform: translateY(0);
   }

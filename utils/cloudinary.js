@@ -6,17 +6,15 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-const uploadImage = (imageUploaded) => {
-  return new Promise((resolve, reject) => {
-    cloudinary.uploader.upload(
-      imageUploaded,
-      { width: 400, height: 300, crop: 'fill' },
-      (err, res) => {
-        if (err) reject(err);
-        resolve(res);
-      },
-    );
-  });
-}
+const uploadImage = (imageUploaded) => new Promise((resolve, reject) => {
+  cloudinary.uploader.upload(
+    imageUploaded,
+    { width: 400, height: 300, crop: 'fill' },
+    (err, res) => {
+      if (err) reject(err);
+      resolve(res);
+    },
+  );
+});
 
 export default uploadImage;

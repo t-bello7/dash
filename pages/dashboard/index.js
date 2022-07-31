@@ -1,11 +1,8 @@
 import DashboardLayout from '../../component/DashboardLayout';
 import styles from '../../styles/DashBoardHome.module.css';
 import CardItem from '../../component/CardItem';
-import { ApolloClient, InMemoryCache, gql, useMutation } from '@apollo/client/core';
 
-const DashboardHome = ({data}) =>{ 
-  console.log(data)
-  return (
+const DashboardHome = () => (
   <DashboardLayout>
     <main className={styles.home__container}>
       <div className="flex">
@@ -34,39 +31,5 @@ const DashboardHome = ({data}) =>{
 
     </main>
   </DashboardLayout>
-)};
+);
 export default DashboardHome;
-
-
-export async function getStaticProps(){
-  const client = new ApolloClient ({
-    uri: 'https://api.hashnode.com/',
-    cache: new InMemoryCache()
-  })
-
-  const {data} = await client.query({
-    query: gql`
-    {
-      user(username: "tbello") {
-        publication {
-          posts(page: 0) {
-            title
-            brief
-            slug
-          }
-        }
-      }
-    }
-
-
-    
-    
-    `
-  })
-  console.log('data', data.user.publication.posts)
-  return {
-    props:{
-      data: []
-    }
-  }
-}

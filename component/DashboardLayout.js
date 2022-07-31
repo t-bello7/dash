@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { useSession } from 'next-auth/react';
+// import { useSession } from 'next-auth/react';
 import SideNav from './SideNav';
 import styles from '../styles/DashboardLayout.module.css';
 import SearchBar from './SearchBar';
@@ -9,10 +9,10 @@ import SearchBar from './SearchBar';
 const DashboardLayout = ({ children }) => {
   // const [content, setContent] = useState(content);
 
-  const { data: session } = useSession();
+  // const { data: session } = useSession();
   const router = useRouter();
   let title;
-  console.log(session);
+  // console.log(session);
 
   // useEffect(() => {
   //   const response = fetch('/api/dasho');

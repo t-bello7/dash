@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "../styles/NewsLetter.module.css"
+import styles from '../styles/NewsLetter.module.css';
 
 const NewsLetter = () => (
   <form className={styles.form__container}>

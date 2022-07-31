@@ -1,7 +1,28 @@
-import { getSession } from 'next-auth/react';
+// import { getSession } from 'next-auth/react';
 import prisma from '../../../lib/prisma';
 
-export default async function (req, res) {
+async function handleGET(postId, res) {
+  const post = await prisma.post.findUnique({
+    where: { id: Number(postId) },
+    include: { author: true },
+  });
+  res.json(post);
+}
+
+async function handleDELETE(postId, res) {
+  const post = await prisma.post.delete({
+    where: { id: Number(postId) },
+  });
+  res.json(post);
+}
+
+async function handleUPDATE(postId, res) {
+  res.send({
+    content: 'update user ',
+  });
+}
+
+export default async function handle(req, res) {
 // const session = await getSession({ req });
 // if (session) {
   // try {
@@ -28,24 +49,5 @@ export default async function (req, res) {
 }
 
 // GET /api/post/:id
-async function handleGET(postId, res) {
-  const post = await prisma.post.findUnique({
-    where: { id: Number(postId) },
-    include: { author: true },
-  });
-  res.json(post);
-}
 
 // DELETE /api/post/:id
-async function handleDELETE(postId, res) {
-  const post = await prisma.post.delete({
-    where: { id: Number(postId) },
-  });
-  res.json(post);
-}
-
-async function handleUPDATE(postId, res) {
-  res.send({
-    content: 'update user ',
-  });
-}

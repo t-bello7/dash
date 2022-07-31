@@ -1,7 +1,6 @@
 // import { getSession } from 'next-auth/react';
 import prisma from '../../../lib/prisma';
 
-
 // GET /api/post/:id
 async function handleGET(userId, res) {
   const user = await prisma.user.findUnique({
@@ -18,19 +17,18 @@ async function handleDELETE(userId, res) {
   res.json(user);
 }
 
-async function handleUPDATE(userId, res) {
+async function handleUPDATE(userId, res, req) {
   const { image } = req.body;
   const updatedItem = await prisma.user.update({
     where: {
       id: userId,
     },
     data: {
-      image: image
+      image,
     },
-  })
+  });
   res.json(updatedItem);
 }
-
 
 export default async function handle(req, res) {
 // const session = await getSession({ req });
