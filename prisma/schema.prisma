@@ -80,6 +80,6 @@ model BlogTokens{
   mediumToken      String   @unique
   DevtoToken      String   @unique
   hashnodeToken      String   @unique
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
