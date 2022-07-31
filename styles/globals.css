@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
 :root {
   --clr-secondary: hsl(36, 100%, 50%);
   --clr-secondary-1: hsl(36, 100%, 71%);
@@ -10,6 +10,7 @@
   --clr-error: hsl(0, 79%, 63%);
   --clr-black-1: hsl(0, 0%, 0%);
   --clr-black-2: hsl(0, 0%, 11%);
+  --clr-black-3: hsl(0, 0%, 20%);
   --clr-white: hsl(0, 0%, 100%);
   --ff-montserrat: 'Montserrat', sans-serif;
   --ff-poppins: 'Poppins' , sans-serif;

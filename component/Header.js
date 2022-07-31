@@ -18,7 +18,7 @@ const navLinks = [
   {
     index: uuidv4(),
     name: 'Contact Us',
-    path: '/services',
+    path: '/contact',
   },
 ];
 

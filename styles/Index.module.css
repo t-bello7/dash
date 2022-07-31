@@ -14,9 +14,10 @@
 }
 
 .card__item {
-  text-align: center;
-  width: inherit;
+  width: 30ch !important;
+  background-color: red;
 }
+
 .center {
   text-align: center;
 }

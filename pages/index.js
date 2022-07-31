@@ -2,6 +2,8 @@ import React from 'react';
 import RootLayout from '../component/RootLayout';
 import CardItem from '../component/CardItem';
 import styles from '../styles/Index.module.css';
+import { signIn } from 'next-auth/react';
+
 
 export default function Home() {
   return (
@@ -15,11 +17,9 @@ export default function Home() {
               customer in a dash.
             </p>
             <div className={styles.track__buttons}>
-              <button type="button" className="btn-primary">Start Now </button>
-              <button type="button" className="btn-secondary">
-                <img src="./play.svg" alt="play-icon" />
-                Watch Video
-              </button>
+              <button type="button" className="btn-primary"  onClick={() => signIn('email', { callbackUrl: '/dashboard' })}>Start Now </button>
+            
+           
             </div>
           </div>
           <img src="./img/large-man.png" alt="man-img" />
@@ -36,7 +36,7 @@ export default function Home() {
             We manage and make social media posting swift for digital marketers
           </p>
           <div className={styles.card__container}>
-            <CardItem>
+            <CardItem className={styles.card__item }>
               <img src="./img/analyze.svg" alt="analyze" />
               <h3>Track Your social media activities</h3>
               <p>
@@ -44,7 +44,7 @@ export default function Home() {
                 Lobortis enim sapien, risus, sed. Feugiat nulla.
               </p>
             </CardItem>
-            <CardItem>
+            <CardItem className={styles.card__item}>
               <img src="./img/analyze.svg" alt="analyze" />
               <h3>Get notified on your post engagements</h3>
               <p>
@@ -52,7 +52,7 @@ export default function Home() {
                 Lobortis enim sapien, risus, sed. Feugiat nulla.
               </p>
             </CardItem>
-            <CardItem>
+            <CardItem className={styles.card__item}>
               <img src="./img/share.svg" alt="analyze" />
               <h3>Post on your different social media platform.</h3>
               <p>

@@ -16,8 +16,8 @@ const navLinks = [
   },
   {
     index: 4 - 97,
-    name: 'Services',
-    path: '/services',
+    name: 'Contact Us',
+    path: '/contact',
   },
 ];
 

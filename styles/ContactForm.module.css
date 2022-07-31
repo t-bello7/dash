@@ -1,0 +1,28 @@
+.form__container{
+    flex-direction: column;
+    width: 50%;
+}
+
+.form__header {
+    font-family: var(--ff-montserrat);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.form__label{
+    font-family: var(--ff-montserrat);
+}
+
+.form__input{
+    border: 0;
+    border-bottom: 1px solid var(--clr-black-3) ;
+    padding-block: 1rem;
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.form__footer{
+    cursor: pointer;
+}

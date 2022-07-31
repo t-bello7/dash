@@ -1,0 +1,31 @@
+.container {
+    flex-direction: column;
+    margin-inline: 1.5rem;
+    margin-block: 3rem;
+    justify-content: space-between;
+}
+.container > :first-child {
+    order: 2;
+}
+
+.contact__info {
+    background-color: var(--clr-black-3);
+    color: var(--clr-white);
+    padding: 2rem ;
+    border-radius: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.contact__info > :first-child {
+    display: block;
+    margin-bottom: 20vh;
+}
+@media (min-width: 800px) {
+    .container {
+        flex-direction: row;
+    }
+    .container > :first-child{
+        order: 0;
+    }
+}

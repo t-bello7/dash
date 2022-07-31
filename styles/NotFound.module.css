@@ -1,0 +1,13 @@
+.container {
+    background-image: url('/img/page404.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+}
+
+.header {
+    text-align: center;
+    padding-top: 4rem;
+    
+}

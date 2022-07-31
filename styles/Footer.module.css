@@ -5,10 +5,6 @@
   display: grid;
 }
 
-.footer__container > :first-child {
-  text-align: right;
-}
-
 .footer__headers {
   font-family: var(--ff-montserrat);
   font-size: 2rem;
