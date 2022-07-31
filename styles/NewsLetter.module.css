@@ -1,0 +1,23 @@
+.form__container {
+    background-color: red;
+}
+
+.form__header {
+    font-family: var(--ff-montserrat);
+    font-size: 1.2rem;
+}
+
+.input__container{
+    padding: 0.5rem;
+    background-color: white;
+    width: fit-content;
+}
+
+.form__input{
+    border: 0;
+}
+
+.form__btn {
+    border: 0;
+    background-color: var(--clr-info);
+}

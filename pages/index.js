@@ -12,7 +12,7 @@ export default function Home() {
             <h1> Publish your articles from one platform.</h1>
             <p>
               Connecting content creators and technical writers to more online
-              customer reach at a dash.
+              customer in a dash.
             </p>
             <div className={styles.track__buttons}>
               <button type="button" className="btn-primary">Start Now </button>
@@ -22,7 +22,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <img src="./img/man.png" alt="man-img" />
+          <img src="./img/large-man.png" alt="man-img" />
         </div>
         <div className={styles.perfect}>
           <div className="flow">
@@ -35,10 +35,26 @@ export default function Home() {
           <p>
             We manage and make social media posting swift for digital marketers
           </p>
-          <div>
+          <div className={styles.card__container}>
             <CardItem>
               <img src="./img/analyze.svg" alt="analyze" />
               <h3>Track Your social media activities</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lobortis enim sapien, risus, sed. Feugiat nulla.
+              </p>
+            </CardItem>
+            <CardItem>
+              <img src="./img/analyze.svg" alt="analyze" />
+              <h3>Get notified on your post engagements</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lobortis enim sapien, risus, sed. Feugiat nulla.
+              </p>
+            </CardItem>
+            <CardItem>
+              <img src="./img/share.svg" alt="analyze" />
+              <h3>Post on your different social media platform.</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Lobortis enim sapien, risus, sed. Feugiat nulla.
@@ -57,22 +73,22 @@ export default function Home() {
             <h3>Know your social media performance</h3>
             <p>Get an adequate statistical analysis of your business social media activities.</p>
           </div>
-          <img src="./img/saly-22.png" alt="sally managing" />
+          <img src="./img/Group-84.png" alt="sally managing" />
 
         </div>
-        <div className={`${styles.center} ${styles.reason}`}>
-          <img src="./img/saly-10.png" alt="sally schduleing" />
+        <div className={`${styles.center} ${styles.reason__switch}  ${styles.reason}`}>
           <div>
             <h3>Plan and schedule your posts.</h3>
             <p>Get an adequate statistical analysis of your business social media activities.</p>
           </div>
+          <img src="./img/Group-83.png" alt="sally schduleing" />
         </div>
         <div className={`${styles.center} ${styles.reason}`}>
           <div>
             <h3>Respond to Comments Swiftly</h3>
             <p>Get an adequate statistical analysis of your business social media activities.</p>
           </div>
-          <img src="./img/saly-7.png" alt="sally-commenting" />
+          <img src="./img/saly-l.png" alt="sally-commenting" />
 
         </div>
       </main>

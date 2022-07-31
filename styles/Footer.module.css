@@ -9,9 +9,15 @@
   text-align: right;
 }
 
+.footer__headers {
+  font-family: var(--ff-montserrat);
+  font-size: 2rem;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 .grid > * > :first-child {

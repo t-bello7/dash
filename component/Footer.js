@@ -26,8 +26,8 @@ const Footer = () => (
     <NewsLetter />
     <div className={styles.grid}>
       <div>
-        <h3> Social Media </h3>
-        <p> Connect with us on our Socials :</p>
+        <h3 className={styles.footer__headers}> Social Media </h3>
+        <p> Connect with us on our Socials </p>
         <span>
           <Link href="https://facebook.com">
             <img src="./img/facebook.png" alt="facebook-logo" />
@@ -41,12 +41,12 @@ const Footer = () => (
         </span>
       </div>
       <div>
-        <h3>Contact Us</h3>
-        <span> williamssaas@gmail.com </span>
+        <h3  className={styles.footer__headers} >Contact Us</h3>
+        <span style={{display:'block'}}> bello@email.tbello.tech </span>
         <span> +344-45-4444</span>
       </div>
       <div className={styles.link__item}>
-        <h3> Link</h3>
+        <h3 className={styles.footer__headers} > Link</h3>
         {
           navLinks.map((navlink) => (
             <Link key={navlink.index} href={navlink.path}>
@@ -63,10 +63,10 @@ const Footer = () => (
     <div>
       {' '}
       Powered by
-      <Link href="https://planetscale.com/">PlanetScale</Link>
+      <Link href="https://planetscale.com/"> PlanetScale</Link>
       {' '}
       and
-      <Link href="https://hashnode.com">Hashnode </Link>
+      <Link href="https://hashnode.com"> Hashnode </Link>
     </div>
   </footer>
 );

@@ -40,7 +40,7 @@
   transition: transform 0.25s ease-in-out;
 }
 
-@media (min-width: 764px) {
+@media (min-width: 800px) {
   .nav__container {
     display: flex;
     justify-content: space-between;
