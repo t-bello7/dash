@@ -31,8 +31,16 @@
   border-radius: 25px;
   width: 100%;
   top: 5vh;
-  transform: translateX(-2000px);
+  transform: translateX(-100%);
   z-index: 9;
+}
+
+.nav__bar > * {
+  margin-bottom: 1rem;
+}
+
+.nav__bar > :first-child > * {
+  margin-bottom: 0.5rem;
 }
 
 .nav__bar.show {
@@ -40,7 +48,7 @@
   transition: transform 0.25s ease-in-out;
 }
 
-@media (min-width: 764px) {
+@media (min-width: 800px) {
   .nav__container {
     display: flex;
     justify-content: space-between;
@@ -69,6 +77,5 @@
 
   .nav__logo {
     width: 100px;
-    margin: 0;
   }
 }

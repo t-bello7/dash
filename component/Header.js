@@ -18,7 +18,7 @@ const navLinks = [
   {
     index: uuidv4(),
     name: 'Contact Us',
-    path: '/services',
+    path: '/contact',
   },
 ];
 
@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header className={styles.nav__container}>
-      <img src="./dash-logo.svg" className={styles.nav__logo} alt="logo" />
+      <a href="/"><img src="./dash-logo.svg" className={styles.nav__logo} alt="logo" /></a>
       <button onClick={handleToggle} type="button" className={styles.nav__toggle}>
         <img src={navBarOpen ? './close.svg' : './menu.svg'} className={styles.nav__menu} alt="menu-btn" />
         {' '}

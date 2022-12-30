@@ -1,0 +1,28 @@
+.about__container > * {
+  padding-inline: 1.5rem;
+}
+
+.about {
+  background-color: var(--clr-black-3);
+  height: 40vh;
+  color: var(--clr-white);
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.goal {
+  flex-direction: column;
+  margin-block: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.goal__image {
+  width: 40ch;
+}
+
+@media (min-width: 800px) {
+  .goal {
+    flex-direction: row;
+  }
+}

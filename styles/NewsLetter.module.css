@@ -1,0 +1,39 @@
+.form__container {
+  /* background-color: red; */
+  margin-block: 1rem;
+}
+
+.form__header {
+  font-family: var(--ff-montserrat);
+}
+
+.input__container {
+  padding: 0.2rem;
+  background-color: white;
+  width: fit-content;
+  border-radius: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.form__input {
+  border: 0;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__btn {
+  background-color: var(--clr-info);
+  color: var(--clr-white);
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .form__input {
+    width: 50ch;
+  }
+}

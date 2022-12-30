@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap');
+
 :root {
   --clr-secondary: hsl(36, 100%, 50%);
   --clr-secondary-1: hsl(36, 100%, 71%);
@@ -9,28 +11,21 @@
   --clr-error: hsl(0, 79%, 63%);
   --clr-black-1: hsl(0, 0%, 0%);
   --clr-black-2: hsl(0, 0%, 11%);
+  --clr-black-3: hsl(0, 0%, 20%);
   --clr-white: hsl(0, 0%, 100%);
+  --ff-montserrat: 'Montserrat', sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;
 }
 
-/*
-popins for paragraph
-Montserrat for paragraph */
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
+  font-family: var(--ff-poppins);
+
+  /* line-height: 36px; */
+  font-size: 16px;
+  font-weight: 400;
 }
 
 a {
@@ -41,6 +36,12 @@ a {
 * {
   box-sizing: border-box;
   margin: 0;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 li,
@@ -88,6 +89,36 @@ ul {
   margin-block: 1rem;
 }
 
-.flow > :not(:last-child) {
-  margin-top: 1rem;
+.flow > * {
+  margin-top: 2rem;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(+100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInfromBottom {
+  0% {
+    transform: translateY(+100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
