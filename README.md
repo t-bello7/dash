@@ -22,11 +22,11 @@ This project is open source and you are free take modify and do with as you wish
 - A local version control like git installed on your computer
 - NodeJs
 - Code editor (Visual studio code, sublime text, notepad++, ...) installed on your computer.
-- Knowledge of HTML, CSS, JavaScipt, Vite and React.
+- Knowledge of NextJS, CSS, and Prisma.
 
 
 ### Setup
-- Clone the project using the [link](https://github.com/t-bello7/micro-calculator)
+- Clone the project using the [link](https://github.com/t-bello7/dash)
 
 ### Install
 - After cloning, change directory into the root folder of the project and run `yarn install` or `npm install` in your terminal to install necessary dependencies.
