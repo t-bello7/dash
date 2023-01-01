@@ -1,6 +1,6 @@
-import DashboardLayout from '../../component/DashboardLayout';
-import styles from '../../styles/DashBoardHome.module.css';
-import CardItem from '../../component/CardItem';
+import DashboardLayout from '../component/DashboardLayout';
+import styles from '../styles/DashBoardHome.module.css';
+import CardItem from '../component/CardItem';
 
 const DashboardHome = () => (
   <DashboardLayout>

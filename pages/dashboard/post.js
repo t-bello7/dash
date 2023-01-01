@@ -1,5 +1,5 @@
-import DashboardLayout from '../../component/DashboardLayout';
-import styles from '../../styles/PostPage.module.css';
+import DashboardLayout from '../component/DashboardLayout';
+import styles from '../styles/PostPage.module.css';
 
 const PostPage = () => (
   <DashboardLayout>

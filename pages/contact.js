@@ -1,7 +1,7 @@
 import React from 'react';
-import RootLayout from '../component/RootLayout';
-import ContactForm from '../component/ContactForm';
-import styles from '../styles/Contact.module.css';
+import RootLayout from './component/RootLayout';
+import ContactForm from './component/ContactForm';
+import styles from './styles/Contact.module.css';
 
 const Contact = () => (
   <>

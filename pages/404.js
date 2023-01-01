@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import RootLayout from '../component/RootLayout';
-import styles from '../styles/NotFound.module.css';
+import RootLayout from './component/RootLayout';
+import styles from './styles/NotFound.module.css';
 
 const NotFound = () => (
   <RootLayout>

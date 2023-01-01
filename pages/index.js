@@ -1,10 +1,10 @@
 import React from 'react';
 import { signIn } from 'next-auth/react';
-import RootLayout from '../component/RootLayout';
-import CardItem from '../component/CardItem';
-import styles from '../styles/Index.module.css';
+import RootLayout from './component/RootLayout';
+import CardItem from './component/CardItem';
+import styles from './styles/Index.module.css';
 
-export default function Home() {
+export default function Home({ email }) {
   return (
     <RootLayout>
       <main className="container flow">
@@ -16,7 +16,7 @@ export default function Home() {
               customer in a dash.
             </p>
             <div className={styles.track__buttons}>
-              <button type="button" className="btn-primary" onClick={() => signIn('email', { callbackUrl: '/dashboard' })}>Start Now </button>
+              <button type="button" className="btn-primary" onClick={() => signIn('email', { email, callbackUrl: `${process.env.NEXTAUTH_URL}/dashboard` })}>Start Now </button>
 
             </div>
           </div>

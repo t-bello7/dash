@@ -1,6 +1,6 @@
 import React from 'react';
-import RootLayout from '../component/RootLayout';
-import styles from '../styles/About.module.css';
+import RootLayout from './component/RootLayout';
+import styles from './styles/About.module.css';
 
 const About = () => (
   <RootLayout>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import DashboardLayout from '../../component/DashboardLayout';
-import styles from '../../styles/CreatePost.module.css';
+import DashboardLayout from '../component/DashboardLayout';
+import styles from '../styles/CreatePost.module.css';
 
 const CreatePost = () => {
   const [post, setPost] = useState({});

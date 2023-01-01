@@ -20,5 +20,9 @@ export default NextAuth({
       from: process.env.EMAIL_FROM,
     }),
   ],
-  // secret: process.env.JWT_SECRET
+  secret: process.env.JWT_SECRET,
+  session: {
+    jwt: true,
+  },
+  debug: true,
 });

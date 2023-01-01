@@ -10,7 +10,7 @@
 
 ## Live Demo (Coming Soon)
 
-<!-- [Live Demo Link](https://t-bello7.github.io/micro-react-todo-list/) -->
+[Live Demo Link](https://dash-two-chi.vercel.app/)
 
 
 ## Getting Started
@@ -33,7 +33,6 @@ This project is open source and you are free take modify and do with as you wish
 
 ### Usage
 - After necessary dependencies have been installed run `yarn dev` or `npm dev` in your terminal to start a live server of the project.
-<!-- ### Run tests -->
 
 ### Deployment
 - Run `yarn build` or `npm run build` in the terminal to build files for deployment and distribution
@@ -59,7 +58,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 - Hashnode
 - PlanetScale
-
 
 ## Resources Used 
 - [PlanetScale Quick Guide](https://docs.planetscale.com/docs/tutorials/planetscale-quick-start-guide)
